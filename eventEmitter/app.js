@@ -23,5 +23,5 @@ People.forEach(function(person){
     })
 })
 
-James.emit('speak',"hey dude");
+James.emit('speak',"hey dude")
 Mughees.emit('speak',"hello")
