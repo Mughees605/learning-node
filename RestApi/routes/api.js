@@ -3,10 +3,12 @@ const express = require('express');
 const router = express.Router();
 
 router.get('/ninjas',function(req,res){
+    console.log(req.body,"from api")
     res.send({type:'GET'})
 })
 
 router.post('/ninjas',function(req,res){
+    console.log(req.body)
     res.send({type:'POST'})
 })
 

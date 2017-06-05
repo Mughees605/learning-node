@@ -1,6 +1,6 @@
 const express = require('express');
 const routes = require('./routes/api')
-
+const bodyParser = require('body-parser')
 const app = express();
 
 app.use('/api',routes)
