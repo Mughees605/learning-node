@@ -2,8 +2,8 @@ const express = require('express');
 
 const app = express();
 
-app.get('/',function(req,res){
-    console.log('GET request')
+app.get('/api',function(req,res){
+    res.send({name:"mughees"})
 })
 
 app.listen(process.env.port || 4000,function(){
