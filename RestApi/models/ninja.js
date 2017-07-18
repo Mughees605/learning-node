@@ -3,9 +3,7 @@ const Schema  = mongoose.Schema;
 
 
 const NinjaSchema = new Schema({
-    name : {
-        type:String,
-    },
+    name : {type:String,},
     rank: {
        type:String
     },
