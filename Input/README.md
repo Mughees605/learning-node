@@ -6,6 +6,7 @@ Suppose we have a simple program called `app.js`. This program prints out whatev
 
 ```javascript
 console.log('Hey there,' , process.argv[2]);
+```
 
 The process module and, specifically, process.argv is what we want to focus on right now. You might be wondering why we have a 2 in square brackets after argv. This is because all of our command-line arguments are passed to the argv property.
 
