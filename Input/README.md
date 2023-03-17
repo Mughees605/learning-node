@@ -16,3 +16,24 @@ The process module and, specifically, process.argv is what we want to focus on r
 
 Uncomment the code on line 2 to line 4 to see the indices used.
 
+# Console input
+
+In Node.js, console input is not often used in programs as they usually have a front-end. However, sometimes console input is necessary, and for that, we have the `readline` module.
+
+Let’s see how this works. In the code widget below, enter your name in the text box of the `>_STDIN`.
+
+```javascript
+const readline = require('readline').createInterface({
+  input: process.stdin,
+  output: process.stdout
+});
+
+readline.question(`What's your name?`, (name) => {
+  console.log(`Hi ${name}!`);
+  readline.close();
+});
+```
+
+This code uses the readline module to create an interface for reading input from the console. The readline.createInterface function takes an object with two properties: input and output. In this case, input is set to process.stdin, which represents standard input (i.e., the console), and output is set to process.stdout, which represents standard output (i.e., the console).
+
+Then, the readline.question method is used to ask the user for their name, and the response is passed as an argument to the callback function. The response is then logged to the console using the console.log method, and the readline interface is closed using the readline.close method.
